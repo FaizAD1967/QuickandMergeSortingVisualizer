@@ -1,2 +1,4 @@
 Mohon untuk menggunakan sorting visualization ini mendownload semua file .py yang ada karena code sorting ada pada masing-masing file yang sudah diberi nama yang sesuai dengan kegunaannya
 Terima Kasih
+
+*Untuk pembuatan ini tidak 100% hasil dari usaha kami namun juga melihat dari tutorial di internet dan dimodifikasi sampai menjadi program yang diinginkan
