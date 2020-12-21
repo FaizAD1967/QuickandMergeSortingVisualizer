@@ -100,9 +100,9 @@ UI_frame2 = Frame(root, width= 600, height= 200, bg='grey')
 UI_frame2.grid(row=1, column=2, padx=10, pady=5)
 
 
-canvasQ = Canvas(root, width=400, height=380, bg='white')
+canvasQ = Canvas(root, width=400, height=380, bg='cyan')
 canvasQ.grid(row=0, column=0, padx=10, pady=5)
-canvasM = Canvas(root, width=400, height=380, bg='white')
+canvasM = Canvas(root, width=400, height=380, bg='cyan')
 canvasM.grid(row=0, column=2, padx=10, pady=5)
 MainConsole = Frame(root, width= 200, height= 200, bg='grey')
 MainConsole.grid(row=0, column=1, padx=10, pady=5)
