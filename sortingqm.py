@@ -4,6 +4,7 @@ import random
 from threading import Thread
 from quicksort import quickSort
 from mergesort import mergeSort
+import time
 
 root = Tk()
 root.title('Quick Sort vs Merge Sort')
@@ -37,14 +38,16 @@ def startAlgorithm():
     Thread(target = merge_sort).start()
 
 def quick_sort():
-    quickSort(data1, 0, len(data1)-1, drawData1, 0.1)
-    root.update()
+    start_time = time.time()
+    quickSort(data1, 0, len(data1)-1, drawData1, 0)
     drawData1(data1, ['green' for x in range(len(data1))])
+    print("Quick Sort : --- %s seconds ---" % (time.time() - start_time))
 
 def merge_sort():
-    mergeSort(data2, drawData2, 0.1)
-    root.update()
+    start_time = time.time()
+    mergeSort(data2, drawData2, 0)
     drawData2(data2, ['green' for x in range(len(data2))])
+    print("Merge Sort : --- %s seconds ---" % (time.time() - start_time))
 
 def drawData1(data, colorArray):
     canvasQ.delete('all')
